@@ -1,0 +1,100 @@
+html {
+    background: linear-gradient(145deg, rgba(160, 220, 255, 0.374), rgba(0, 162, 255, 0.752));
+    font-family:Arial, Helvetica, sans-serif;
+    }
+
+header {
+    text-align: center;
+}
+
+img {
+    border: 5px solid #555;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    border-radius: 10px;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #555;
+    animation: welcome_color_change 3s infinite;
+    animation-direction: alternate;
+}
+
+
+.Navigation-title {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+nav, address {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+address h3 {
+    font-style: italic;
+}
+
+
+nav a, address a {
+    margin: 5px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:midnightblue;
+    color: azure;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: 1s;
+}
+
+nav a:hover, address a:hover {
+    background-color:lightsalmon;
+    transition: 1s;
+    box-shadow: 0 5px #adabab;
+    color: azure;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+nav a:active, address a:active {
+    background-color:coral;
+    box-shadow: 0 5px #adabab;
+    transform: translateY(3px);
+    padding-left: 100px;
+    padding-right: 100px;
+    transition: .5s;
+}
+
+@keyframes welcome_color_change {
+    from {background-color:cornflowerblue; }
+    to {background-color: lightsalmon;}
+}
+
+@media screen and (max-width: 768px) {
+
+    nav, address {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    nav a, address a {
+        padding: 20px;
+    }
+
+}

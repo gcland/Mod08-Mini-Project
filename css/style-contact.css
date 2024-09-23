@@ -1,0 +1,122 @@
+html {
+    background: linear-gradient(90deg,rgba(199, 6, 6, 0.915), rgba(32, 158, 248, 0.577));
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+.Navigation-title {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+nav, #submit {
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav a, button, input[type=submit] {
+    margin: 5px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:midnightblue;
+    color: azure;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: 1s;
+    border: 1px solid #000000;
+}
+
+nav a:hover, button:hover, input[type=submit]:hover {
+    background-color:lightsalmon;
+    transition: 1s;
+    box-shadow: 0 5px #adabab;
+    color: azure;
+    padding-left: 75px;
+    padding-right: 75px;
+    border: 1px solid #000000;
+}
+
+nav a:active, button:active, input[type=submit]:active {
+    background-color:coral;
+    box-shadow: 0 5px #adabab;
+    transform: translateY(3px);
+    padding-left: 100px;
+    padding-right: 100px;
+    transition: .5s;
+}
+
+h3 {
+    font-style: italic;
+}
+
+
+input[type=text], input[type=email] {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+
+}
+input[type=text]:focus, input[type=email]:focus {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 75%;
+}
+textarea {
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    transition: .35s;
+    background-color:midnightblue;
+    box-shadow: 0 5px #adabab;
+    color: azure;
+    margin-left: 10px;
+    margin-top: 10px;
+    transition: 1s;
+}
+
+textarea:hover {
+    box-shadow: 0 5px #adabab;
+    background-color: lightsalmon;
+    color: black;
+}
+
+.slider {
+    width: 50%;
+    background-color: black;
+    opacity: .6;
+    transition: .35s;
+    margin-left: 10px;
+}
+
+.slider:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.slider:active {
+    cursor: pointer;
+}
+
+input {
+    margin-top: 10px;
+}
+
+.Form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+body {
+    border: 2px solid #00000033;
+    padding: 10px;
+    border-radius: 10px;
+}
